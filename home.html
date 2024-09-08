@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <head>
+
+    <style>
+        body {
+            background-attachment: fixed;
+            background-color: rgb(5, 5, 5);
+        }
+        .side {
+            display: flex;
+        }
+        .img {
+            display: inline-block;
+            margin-left: 40px;
+            margin-top: 160px;
+            border-radius: 30px;
+            border-bottom:5px solid var(--skin-color);
+            border-left:5px solid var(--skin-color); 
+            left:0;
+        }
+        .name {
+            color: aliceblue;
+            margin-left: 60px;
+            margin-top: 160px;
+            font-weight: 80;
+            font-size: 16px;
+            font-family: Poppins, sans-serif;
+        }
+        .button_box {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            border: 2px solid rgb(255, 174, 0);
+            background-color: black;
+            color: white;
+            z-index: 1;
+            margin-left: 400px;
+            margin-top: 80px;
+        }
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 174, 0);
+            border-radius: 50px;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            transition: width 0.5s cubic-bezier(1, 0, 0.8, 1);
+        }
+        .arrow {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            transform: rotate(45deg);
+            top: 20px;
+            left: 10px;
+            transition: .5s;
+        }
+        .text {
+            position: absolute;
+            top: 0;
+            left: 55px;
+            font-size: 10px;
+            line-height: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            z-index: 3;
+            transition: .5s;
+        }
+        .button_box:hover .arrow {
+            left: 20px;
+        }
+        .button_box:hover .circle {
+            width: 200px;
+        }
+        .wrapper {
+            position: fixed;
+            top: 50%;
+            right: 20px; /* Position it 20px from the right edge */
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            
+        }
+        
+        .wrapper .iconbutton {
+            height: 50px; 
+            width: 50px;  
+            border-radius: 50px; 
+            background: rgb(255, 187, 0);
+            cursor: pointer;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease-out;
+            
+        }
+        
+        .wrapper .iconbutton .icon {
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(254, 253, 253);
+            
+        }
+        
+        .wrapper .iconbutton span {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-size: 15px;
+            border-radius: 50%; 
+            font-weight: 600;
+            line-height: 40px;
+            margin-left: 9px; 
+            color: rgb(254, 254, 254);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+            white-space: nowrap;
+            opacity: 0; 
+            position: absolute;
+            left: 1px; 
+            top: 50%; 
+            transform: translateY(-50%) scale(0);
+        }
+        
+        .wrapper .iconbutton:hover {
+            width: 100px; 
+            text-align: center;
+        }
+        
+        .wrapper .iconbutton:hover .icon {
+            opacity: 0.1; 
+        }
+        
+        .wrapper .iconbutton:hover span {
+            opacity: 1; 
+            transform: translateY(-50%) scale(1); 
+        }
+          
+        .img1 {
+            border-radius: 10%;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="side">
+        
+        <div class="img">
+            <img src="ProfileImage.jpg" class="img1">
+        </div>
+        <div class="name"><span style="color:rgb(255, 191, 0);font-size:60px;font-family: Poppins, sans-serif;font-weight:600">SRIJA GURRALA</span><br><br><br>
+            <span style="color:rgb(250, 250, 231);font-size:30px;font-family: Poppins, sans-serif;font-weight:300">FRONT-END DEVELOPER<br></span><span style="color:rgb(250, 250, 231);font-size:40px;"></span>
+         I'm Srija Gurrala, a front-end developer focused on crafting clean and user-friendly experiences <br>
+         I am passionate about building excellent software that improves the lives of those around me. </span> <br><br>
+       
+         <div class="button_box">
+             <span class="circle">
+              <span class="arrow"></span>
+              </span>
+              <span class="text">more about me</span>
+                </div>
+                <div class="wrapper">
+                    <a href="home.html">
+                    <div class="iconbutton">
+                        <div class="icon"><i class="fa fa-home"></i></div>
+                        <span>HOME</span>
+                    </div>
+                    </a>
+                    <a href="about.html">
+                    <div class="iconbutton">
+                        <div class="icon"><i class="fa fa-user"></i></div>
+                        <span>ABOUT</span>
+                    </div>
+                </a>
+                <a href="portfolio.html">
+                    <div class="iconbutton">
+                        <div class="icon"><i class="fa fa-briefcase"></i></div>
+                        <span>PORTFOLIO</span>
+                    </div>
+                </a>
+                <a href="contact.html">
+                    <div class="iconbutton">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <span>CONTACT</span>
+                    </div>
+                </a>
+                </div>
+             </div>
+             
+            </div>
+
+
+             
+    
+    </body>
+   
+
+</html>

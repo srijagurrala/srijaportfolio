@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Srija Gurrala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+       
+            h1 {
+                font-size: 60px;
+             color:rgb(255, 191, 0);
+                text-align: center;
+            } .wrapper {
+                position: fixed;
+                top: 50%;
+                right: 20px; /* Position it 20px from the right edge */
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                
+            }
+            
+            .wrapper .iconbutton {
+                height: 50px; 
+                width: 50px;  
+            
+                cursor: pointer;
+                border: 1px solid rgb(74, 68, 68);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px; 
+                overflow: hidden;
+                position: relative;
+                transition: all 0.3s ease-out;
+                
+            }
+            
+            .wrapper .iconbutton .icon {
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(254, 253, 253);
+                
+            }
+            
+            .wrapper .iconbutton span {
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 14px;
+                border-radius: 50%; 
+                font-weight: 600;
+                line-height: 40px;
+                margin-left: 9px; 
+                color: rgb(254, 254, 254);
+                transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+                white-space: nowrap;
+                opacity: 0; 
+                position: absolute;
+                left: 1px; 
+                top: 50%; 
+                transform: translateY(-50%) scale(0);
+            }
+            
+            .wrapper .iconbutton:hover {
+                width: 100px; 
+                background: rgb(255, 187, 0);
+            }
+            
+            .wrapper .iconbutton:hover .icon {
+                opacity: 0.1; 
+            }
+            
+            .wrapper .iconbutton:hover span {
+                opacity: 1; 
+                transform: translateY(-50%) scale(1); 
+            }
+            
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.project {
+    width: 500px;
+    margin: 20px;
+   
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project img {
+    width: 100%;
+    height: auto;
+}
+.project-content {
+    padding: 15px;
+}
+.project-content h2 {
+    font-size: 1.5em;
+    color: rgb(98, 98, 99);
+}
+.project-content p {
+    color: #ece2e2;
+    line-height: 1.5;
+}
+.project-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(249, 200, 24);
+    text-decoration: none;
+}
+.project-content a:hover {
+    text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+<h1>Portfolio</h1>
+<div class="portfolio-container">
+<div class="project">
+    <img src="project1.jpg" alt="Project 1" >
+    <div class="project-content">
+        <h2>RESTAURANT MANAGEMENT SYSTEM</h2>
+        <p> Designed to enhance restaurant operations through a comprehensive and user
+            friendly platform. The system integrates order processing, table reservations, and inventory 
+            tracking to improve efficiency for both staff and customers. 
+            Technologies Used: 
+                             Frontend: HTML, CSS, JavaScript 
+                             Backend: Java Servlets 
+                             Database: Oracle 10g Express Edition </p>
+       
+    </div>
+</div>
+
+</div>
+
+<div class="wrapper">
+<a href="home.html">
+    <div class="iconbutton">
+        <div class="icon"><i class="fa fa-home"></i></div>
+        <span>HOME</span>
+    </div>
+</a>
+<a href="about.html">
+    <div class="iconbutton">
+        <div class="icon"><i class="fa fa-user"></i></div>
+        <span>ABOUT</span>
+    </div>
+</a>
+<a href="portfolio.html">
+    <div class="iconbutton">
+        <div class="icon"><i class="fa fa-briefcase"></i></div>
+        <span>PORTFOLIO</span>
+    </div>
+</a>
+<a href="contact.html">
+    <div class="iconbutton">
+        <div class="icon"><i class="fa fa-phone"></i></div>
+        <span>CONTACT</span>
+    </div>
+</a>
+</div>
+</body>
+</html>
